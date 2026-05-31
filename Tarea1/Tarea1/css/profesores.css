@@ -73,6 +73,14 @@ section h2 {
     font-size: 18px;
 }
 
+.profesor h4 {
+    color: #1b1b1b;
+    font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
 .profesor p {
     margin: 0 0 15px 0;
     font-size: 14px;
@@ -134,6 +142,20 @@ section h2 {
     transform: translateY(-5px); 
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.boton:hover {
+    background-color: #1e40af; 
+    transform: translateY(-3px) scale(1.03); 
+    box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3); 
+}
+
+.profesor:hover .boton {
+    background-color: #2563eb;
+}
+
+.boton {
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
