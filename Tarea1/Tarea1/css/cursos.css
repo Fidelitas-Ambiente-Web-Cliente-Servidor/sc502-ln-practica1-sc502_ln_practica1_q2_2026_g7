@@ -1,0 +1,82 @@
+@import url("style.css");
+
+#encabezado {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 50px;
+}
+
+#encabezado h2 {
+    color: #1b1b1b;
+    font-size: 35px;
+}
+
+#encabezado p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+#encabezado input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+section h2 {
+    color: #0b1f3a;
+    margin-bottom: 20px;
+}
+
+.grupo-cursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.curso {
+    background-color: white;
+    border: 1px solid black;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.curso img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.curso h3 {
+    color: #1d4ed8;
+    margin: 10px;
+}
+
+.curso h4 {
+    color: #3d6191;
+    margin: 10px;
+}
+
+.curso p {
+    margin: 10px;
+}
+
+@media (max-width: 700px) {
+
+    #encabezado input {
+        width: 100%;
+    }
+
+    .grupo-cursos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
