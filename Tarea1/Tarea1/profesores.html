@@ -10,9 +10,8 @@
     <header>
         <nav>
             <h1>Academia NovaTech</h1>
-
             <ul>
-                <li><a  href="index.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="cursos.html">Cursos</a></li>
                 <li><a class="activo" href="profesores.html">Profesores</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -24,53 +23,15 @@
 
         <section id="principal">
             <h2>Profesores</h2>
-            <p>
-                Nuestra academia cuenta con los siguientes profesores.
-            </p>
+            <p>Nuestra academia cuenta con los siguientes profesores.</p>
         </section>
 
         <section>
-
-            <div class="grupo-profesores">
-
-                <article class="profesor">
-                    <img src="https://incae.edu/wp-content/uploads/2024/03/Camelia-Ilie-Cardoza-INCAE.jpg">
-                    <h4>Camelia Llie Cardoza</h4>
-                    <h3>Rectora</h3>
-                    <p>Doctorado en Administración de Empresas, 
-                    Universidad Pontificia de Comillas.</p>
-                    <a class="boton" href="profesores.html">Ver más</a>
-                </article>
-
-                <article class="profesor">
-                    <img src="https://incae.edu/wp-content/uploads/2024/03/Roy-Gerardo-Zuniga-INCAE.jpg">
-                    <h4>Roy Gerardo Zúñiga</h4>
-                    <h3>Vicerrector Académico</h3>
-                    <p>Ph.D Ingeniería Industrial, énfasis en Estrategia de Operaciones y Dinámica de Sistemas.</p>
-                    <a class="boton" href="profesores.html">Ver más</a>
-                </article>
-
-                <article class="profesor">
-                    <img src="https://incae.edu/wp-content/uploads/2024/03/Silke-Verena-Bucher-INCAE.jpg">
-                    <h4>Silke Verena Bucher</h4>
-                    <h3>Decana de Facultad e Investigación</h3>
-                    <p>Ph.D Gestión del Cambio Estratégico. Universidad de St. Gallen.</p>
-                    <a class="boton" href="profesores.html">Ver más</a>
-                </article>
-
-                <article class="profesor">
-                    <img src="https://incae.edu/wp-content/uploads/2024/03/Carla-Fernandez-Corrales-INCAE-04.jpg">
-                    <h4>Carla Fernández Corrales</h4>
-                    <h3>Directora Senior de Educación Ejecutiva & INCAE Online</h3>
-                    <p>Ph.D en Administración de Negocios. Universidad de Illinois en Urbana-Champaign.</p>
-                    <a class="boton" href="profesores.html">Ver más</a>
-                </article>
-
-            </div>
+            <div id="contenedor-profesores" class="grupo-profesores">
+                </div>
         </section>
 
         <section class="seccion-identidad">
-            
             <article class="tarjeta-identidad">
                 <h2>Misión</h2>
                 <p>
@@ -85,10 +46,9 @@
                 <p>
                     Ser la academia líder en formación online de habla hispana, reconocida por la 
                     excelencia de nuestros profesores, la innovación de nuestros métodos de aprendizaje 
-                     y el éxito laboral de nuestros egresados.
+                    y el éxito laboral de nuestros egresados.
                 </p>
             </article>
-
         </section>
 
     </main>
@@ -96,8 +56,24 @@
     <footer>
         <p>Academia NovaTech</p>
         <p>Facebook | Instagram | TikTok</p>
-        
     </footer>
+
+    <div id="mensaje-sistema" style="padding: 10px; text-align: center; font-weight: bold; min-height: 20px;"></div>
+
+    <div class="modal fade" id="modalProfesor" tabindex="-1" aria-labelledby="modalProfesorLabel" aria-hidden="true" style="display: none; background: rgba(0, 0, 0, 0.5);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProfesorLabel">Detalle del Profesor</h5>
+                    <button type="button" class="btn-close" id="btnCerrarModal" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-cuerpo-detalle">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/profesores.js"></script>
 
 </body>
 </html>
