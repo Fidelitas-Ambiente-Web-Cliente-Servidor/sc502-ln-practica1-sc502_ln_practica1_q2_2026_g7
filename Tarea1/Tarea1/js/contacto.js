@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
 
     // elementos del formulario
     const form = document.querySelector("form");
@@ -174,4 +174,4 @@ document.addEventListener("DOMContentLoaded", function () {
         actualizarBoton();
     });
 
-});
+});*/
