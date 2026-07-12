@@ -1,0 +1,20 @@
+
+
+
+.bg-body-tertiary {
+    background-color: aqua !important;
+    color: #fff !important;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.btn-custom{
+
+    background-color: aqua;
+}
+
+.container {
+    background-color: brown;
+}
