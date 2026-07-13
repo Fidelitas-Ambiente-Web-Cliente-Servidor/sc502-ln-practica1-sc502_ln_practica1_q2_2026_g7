@@ -80,3 +80,61 @@ section h2 {
     }
 
 }
+
+.formulario-filtro {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.formulario-filtro label {
+    font-weight: bold;
+    color: #0b1f3a;
+}
+
+.formulario-filtro select {
+    min-width: 220px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-filtro button {
+    padding: 10px 20px;
+    background-color: #0b1f3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario-filtro button:hover {
+    background-color: #16345f;
+}
+
+.mensaje-sin-resultados {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff3cd;
+    border: 1px solid #ffe69c;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+
+    .formulario-filtro {
+        flex-direction: column;
+    }
+
+    .formulario-filtro select,
+    .formulario-filtro button {
+        width: 100%;
+    }
+
+}

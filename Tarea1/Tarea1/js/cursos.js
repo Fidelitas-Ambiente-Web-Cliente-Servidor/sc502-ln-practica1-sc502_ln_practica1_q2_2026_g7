@@ -1,3 +1,5 @@
+/*
+
 console.log("JS funcionando");
 // Array de cursos
 
@@ -113,3 +115,5 @@ categoria.addEventListener("change", filtrarCursos);
 
 // Mostrar cursos al iniciar
 mostrarCursos(cursos);
+
+*/
