@@ -95,3 +95,20 @@ ALTER TABLE `cursos`
 
 ALTER TABLE `cursos`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+
+  ----------Profesores----------------------
+CREATE TABLE `profesores` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `nombre` VARCHAR(100) NOT NULL,
+  `especialidad` VARCHAR(100) NOT NULL,
+  `bio` TEXT NOT NULL,
+  `foto` VARCHAR(255) NOT NULL,
+  `estado` ENUM('Activo', 'Inactivo') DEFAULT 'Activo'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `profesores` (`nombre`, `especialidad`, `bio`, `foto`, `estado`) VALUES
+('Camelia Ilie Cardoza', 'Rectora', 'Doctorado en Administración de Empresas, Universidad Pontificia de Comillas.', 'https://incae.edu/wp-content/uploads/2024/03/Camelia-Ilie-Cardoza-INCAE.jpg', 'Activo'),
+('Roy Gerardo Zúñiga', 'Vicerrector Académico', 'Ph.D Ingeniería Industrial, énfasis en Estrategia de Operaciones y Dinámica de Sistemas.', 'https://incae.edu/wp-content/uploads/2024/03/Roy-Gerardo-Zuniga-INCAE.jpg', 'Activo'),
+('Silke Verena Bucher', 'Decana de Facultad e Investigación', 'Ph.D Gestión del Cambio Estratégico. Universidad de St. Gallen.', 'https://incae.edu/wp-content/uploads/2024/03/Silke-Verena-Bucher-INCAE.jpg', 'Activo'),
+('Carla Fernández Corrales', 'Directora Senior de Educación Ejecutiva & INCAE Online', 'Ph.D en Administración de Negocios. Universidad de Illinois en Urbana-Champaign.', 'https://incae.edu/wp-content/uploads/2024/03/Carla-Fernandez-Corrales-INCAE-04.jpg', 'Activo');
