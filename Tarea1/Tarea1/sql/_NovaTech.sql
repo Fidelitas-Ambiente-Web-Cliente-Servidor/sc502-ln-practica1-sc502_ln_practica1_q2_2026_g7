@@ -112,3 +112,81 @@ INSERT INTO `profesores` (`nombre`, `especialidad`, `bio`, `foto`, `estado`) VAL
 ('Roy Gerardo Zúñiga', 'Vicerrector Académico', 'Ph.D Ingeniería Industrial, énfasis en Estrategia de Operaciones y Dinámica de Sistemas.', 'https://incae.edu/wp-content/uploads/2024/03/Roy-Gerardo-Zuniga-INCAE.jpg', 'Activo'),
 ('Silke Verena Bucher', 'Decana de Facultad e Investigación', 'Ph.D Gestión del Cambio Estratégico. Universidad de St. Gallen.', 'https://incae.edu/wp-content/uploads/2024/03/Silke-Verena-Bucher-INCAE.jpg', 'Activo'),
 ('Carla Fernández Corrales', 'Directora Senior de Educación Ejecutiva & INCAE Online', 'Ph.D en Administración de Negocios. Universidad de Illinois en Urbana-Champaign.', 'https://incae.edu/wp-content/uploads/2024/03/Carla-Fernandez-Corrales-INCAE-04.jpg', 'Activo');
+
+--
+-- Estructura para la tabla "cursos_destacados"
+--
+
+CREATE TABLE `cursos_destacados` (
+  `id` int NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `descripcion` varchar(255) NOT NULL,
+  `precio` decimal(10,2) NOT NULL,
+  `categoria` varchar(100) NOT NULL,
+  `disponible` tinyint(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+--
+-- Registros de prueba para la tabla "cursos_destacados"
+--
+
+INSERT INTO `cursos_destacados`
+(`id`, `nombre`, `descripcion`, `precio`, `categoria`, `disponible`)
+VALUES
+(
+  1,
+  'HTML5 Básico',
+  'Aprendé a crear la estructura de una página web usando etiquetas HTML.',
+  35000.00,
+  'Desarrollo Web',
+  1
+),
+(
+  2,
+  'CSS3 Básico',
+  'Aprendé a dar color, forma y estilo a tus páginas web.',
+  40000.00,
+  'Diseño Web',
+  1
+),
+(
+  3,
+  'Bootstrap Inicial',
+  'Aprendé a organizar sitios usando contenedores, filas y columnas.',
+  30000.00,
+  'Diseño Responsive',
+  1
+),
+(
+  4,
+  'JavaScript Básico',
+  'Aprendé los fundamentos de JavaScript para agregar interactividad.',
+  45000.00,
+  'Programación Web',
+  1
+),
+(
+  5,
+  'Java Fundamentos',
+  'Aprendé lógica de programación y programación orientada a objetos.',
+  55000.00,
+  'Programación',
+  1
+);
+
+
+--
+-- Índice para la tabla "cursos_destacados"
+--
+
+ALTER TABLE `cursos_destacados`
+  ADD PRIMARY KEY (`id`);
+
+
+--
+-- AUTO_INCREMENT para la tabla "cursos_destacados"
+--
+
+ALTER TABLE `cursos_destacados`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;

@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 /*document.addEventListener("DOMContentLoaded", function () {
+=======
+document.addEventListener("DOMContentLoaded", function () {
+>>>>>>> Stashed changes
 
     // elementos del formulario
     const form = document.querySelector("form");
@@ -174,4 +178,4 @@
         actualizarBoton();
     });
 
-});*/
+*/
