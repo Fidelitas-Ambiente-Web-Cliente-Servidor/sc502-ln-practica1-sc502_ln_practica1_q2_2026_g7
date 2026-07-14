@@ -15,7 +15,7 @@ class ContactoModel
     {
           $stmt = $this->db->prepare(
             'INSERT INTO contacto (nombre, correo, telefono, asunto, mensaje, fecha_envio)
-                VALUES (:nombre, :correo, :telefono, :asunto, :mensaje)';
+                VALUES (:nombre, :correo, :telefono, :asunto, :mensaje');
 
  
         return $stmt->execute([
