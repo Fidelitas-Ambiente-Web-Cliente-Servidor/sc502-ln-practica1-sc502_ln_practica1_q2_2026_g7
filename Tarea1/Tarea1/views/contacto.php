@@ -1,5 +1,5 @@
 
-<?php require __DIR__ . '/../layout/header.php'; ?>
+<?php require __DIR__ . '/layout/header.php'; ?>
 
     <main>
 
@@ -108,5 +108,5 @@
 
     </main>
 
-<?php require __DIR__ . '/../layout/footer.php'; ?>
+<?php require __DIR__ . '/layout/footer.php'; ?>
 

@@ -1,5 +1,6 @@
 <?php require __DIR__ . '/../layout/header.php'; ?>
 
+
 <main>
 
     <section id="encabezado">

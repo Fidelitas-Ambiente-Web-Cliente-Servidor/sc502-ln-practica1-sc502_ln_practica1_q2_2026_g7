@@ -5,11 +5,13 @@
  */
 $pageTitle = 'Listado de Profesores';
 $depth = 0; 
-require __DIR__ . '/../layout/header.php';
+require __DIR__ . '/layout/header.php';
 ?>
 
 
-<link rel="stylesheet" href="./css/profesores.css">
+<link rel="stylesheet" href="../css/profesores.css">
+
+<link rel="stylesheet" href="../css/style.css">
 
 <main>
   <!-- Sección Principal -->
@@ -85,6 +87,6 @@ require __DIR__ . '/../layout/header.php';
 </div>
 
 <!-- Lógica interactiva JS colocada de forma limpia antes del cierre del layout -->
-<script src="./js/profesores.js"></script>
+<script src="../js/profesores.js"></script>
 
-<?php require __DIR__ . '/../layout/footer.php'; ?>
+<?php require __DIR__ . '/layout/footer.php'; ?>

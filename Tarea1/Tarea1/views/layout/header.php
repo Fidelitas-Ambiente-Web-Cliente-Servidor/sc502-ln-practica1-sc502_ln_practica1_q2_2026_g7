@@ -11,8 +11,12 @@
 
     <title>Academia NovaTech</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cursos.css">
+
+    <link rel="stylesheet" href="/sc502-ln-practica1-sc502_ln_practica1_q2_2026_g7/Tarea1/Tarea1/css/style.css">
+    <link rel="stylesheet" href="/sc502-ln-practica1-sc502_ln_practica1_q2_2026_g7/Tarea1/Tarea1/css/cursos.css">
+    <link rel="stylesheet" href="/sc502-ln-practica1-sc502_ln_practica1_q2_2026_g7/Tarea1/Tarea1/css/profesores.css">
+    <link rel="stylesheet" href="/sc502-ln-practica1-sc502_ln_practica1_q2_2026_g7/Tarea1/Tarea1/css/contacto.css">
+    <link rel="stylesheet" href="/sc502-ln-practica1-sc502_ln_practica1_q2_2026_g7/Tarea1/Tarea1/css/index.css">
 </head>
 
 <body>
