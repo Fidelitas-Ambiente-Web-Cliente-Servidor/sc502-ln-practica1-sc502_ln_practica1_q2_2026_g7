@@ -5,7 +5,7 @@
  */
 $pageTitle = 'Listado de Profesores';
 $depth = 0; 
-require __DIR__ . '/layout/header.php';
+require __DIR__ . '/../layout/header.php';
 ?>
 
 
